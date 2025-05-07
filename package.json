@@ -1,0 +1,20 @@
+{
+  "name": "my-jenkins-pipeline",
+  "version": "1.0.0",
+  "description": "Using cron job Added a new line  Added one more line local change webhook adsdxhgfhkjkjkl;lk;lkhhjgb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RIDDHIGANOR/my-jenkins-pipeline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RIDDHIGANOR/my-jenkins-pipeline/issues"
+  },
+  "homepage": "https://github.com/RIDDHIGANOR/my-jenkins-pipeline#readme"
+}
