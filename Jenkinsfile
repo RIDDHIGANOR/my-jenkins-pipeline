@@ -20,14 +20,14 @@ pipeline {
             }
         }
          stage('Saving artifacts') {
-            environment{
-                NODE_ENV = "stage"
-            }
             steps {
                archiveArtifacts artifacts: '**', followSymlinks: false
             }
         }
         stage('Stage with secret') {
+            environment{
+                NODE_ENV = "stage"
+            }
             steps {
                withCredentials([string(credentialsId: 'mysecrettext', variable: 'production_secret')]) {
                echo "${production_secret}"
