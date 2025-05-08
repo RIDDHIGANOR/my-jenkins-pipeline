@@ -24,5 +24,11 @@ pipeline {
                archiveArtifacts artifacts: '**', followSymlinks: false
             }
         }
+        stage('Env Variables') {
+            steps {
+               withCredentials([string(credentialsId: 'mysecrettext', variable: 'production')]) {
+            }
+            }
+        }
     }
 }
