@@ -19,5 +19,10 @@ pipeline {
                 sh 'npm install'
             }
         }
+         stage('Saving artifacts') {
+            steps {
+               archiveArtifacts artifacts: '**', followSymlinks: false
+            }
+        }
     }
 }
